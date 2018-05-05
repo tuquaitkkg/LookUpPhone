@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
+            <connections>
+                <outlet property="btnReview" destination="SGu-Hi-wn5" id="WDA-pZ-OKO"/>
+                <outlet property="btnShareApp" destination="749-ai-2E3" id="Xic-bP-l3m"/>
+                <outlet property="labelVersion" destination="6jG-Yl-wC0" id="QAb-NR-dVl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jG-Yl-wC0">
+                    <rect key="frame" x="0.0" y="20" width="375" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="749-ai-2E3">
+                    <rect key="frame" x="38" y="57" width="300" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="IFs-du-acI"/>
+                        <constraint firstAttribute="width" constant="300" id="rKQ-5s-LMj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Share this app">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onShare:" destination="-1" eventType="touchUpInside" id="gOC-Ul-mjk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGu-Hi-wn5">
+                    <rect key="frame" x="38" y="117" width="300" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="5hd-WV-mJF"/>
+                        <constraint firstAttribute="height" constant="40" id="Hzm-bQ-bLF"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="bwA-er-rJx"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="cbk-tp-IJp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Write a review">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onReview:" destination="-1" eventType="touchUpInside" id="saM-w9-TpZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6jG-Yl-wC0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="8vH-g0-bm5"/>
+                <constraint firstItem="SGu-Hi-wn5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F8O-iY-2S0"/>
+                <constraint firstItem="749-ai-2E3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NBT-i1-JnZ"/>
+                <constraint firstAttribute="trailing" secondItem="6jG-Yl-wC0" secondAttribute="trailing" id="QJJ-dq-Ej1"/>
+                <constraint firstItem="6jG-Yl-wC0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="S1V-g8-0Tp"/>
+                <constraint firstItem="749-ai-2E3" firstAttribute="top" secondItem="6jG-Yl-wC0" secondAttribute="bottom" constant="20" id="gYH-vQ-Bcl"/>
+                <constraint firstItem="SGu-Hi-wn5" firstAttribute="top" secondItem="749-ai-2E3" secondAttribute="bottom" constant="20" id="v03-XL-uGn"/>
+            </constraints>
+            <point key="canvasLocation" x="-44.5" y="38.5"/>
+        </view>
+    </objects>
+</document>
