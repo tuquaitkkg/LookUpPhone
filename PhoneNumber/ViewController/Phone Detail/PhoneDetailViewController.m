@@ -53,6 +53,7 @@
     [self.mapView addAnnotation:annotation];
     
     self.manager = [[RETableViewManager alloc] initWithTableView:self.tableView];
+    self.manager.delegate = self;
     self.manager[NSStringFromClass([RETableViewItem class])]     = NSStringFromClass([PhoneViewCell class]);
     [self setUpData];
 
@@ -150,6 +151,23 @@
     MapViewController *mapVC = [[MapViewController alloc] initWithNibName:NSStringFromClass([MapViewController class]) bundle:nil];
     mapVC.phoneModel = self.phoneModel;
     [self.navigationController pushViewController:mapVC animated:YES];
+}
+
+- (void)tableView:(UITableView *)tableView didLoadCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    PhoneViewCell *newCell = (PhoneViewCell *)cell;
+    newCell.clickGoToCallView = ^{
+        CallAndMessageViewController *callVC = [[CallAndMessageViewController alloc] initWithNibName:@"CallAndMessageViewController" bundle:nil];
+        callVC.hidesBottomBarWhenPushed = YES;
+        NSString *str;
+        if ([self.phoneModel phoneString].length > 0) {
+            str = [[self.phoneModel phoneString] stringByReplacingOccurrencesOfString:@"-" withString:@""];
+            str = [str stringByReplacingOccurrencesOfString:@"(" withString:@""];
+            str = [str stringByReplacingOccurrencesOfString:@")" withString:@""];
+            str = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
+        }
+        callVC.phoneNumber = str;
+        [self.navigationController pushViewController:callVC animated:YES];
+    };
 }
 
 @end

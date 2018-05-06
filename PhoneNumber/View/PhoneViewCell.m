@@ -41,7 +41,10 @@
     self.labelTitle.text = self.item.title;
    
     self.labelSubTitle.text = self.item.detailLabelText;
-    self.lockImageView.hidden = YES;
+    self.btnCall.hidden = YES;
+    if (self.rowIndex == 2) {
+        self.btnCall.hidden = NO;
+    }
 }
 
 #pragma mark -
@@ -53,4 +56,9 @@
 #pragma mark -
 #pragma mark Text field events
 
+- (IBAction)goToCallView:(id)sender {
+    if (self.clickGoToCallView) {
+        self.clickGoToCallView();
+    }
+}
 @end

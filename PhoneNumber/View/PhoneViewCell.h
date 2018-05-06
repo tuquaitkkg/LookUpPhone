@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UILabel *labelSubTitle;
-@property (weak, nonatomic) IBOutlet UIImageView *lockImageView;
+@property (weak, nonatomic) IBOutlet UIButton *btnCall;
+@property (copy, nonatomic) void(^clickGoToCallView)();
+- (IBAction)goToCallView:(id)sender;
 
 @end
