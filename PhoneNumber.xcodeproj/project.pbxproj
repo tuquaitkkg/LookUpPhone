@@ -50,6 +50,7 @@
 		3D78D3E3209ED1DC003A61AE /* BorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D3E2209ED1DC003A61AE /* BorderView.m */; };
 		3D78D3E8209EE952003A61AE /* CallAndMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D3E6209EE952003A61AE /* CallAndMessageViewController.m */; };
 		3D78D3E9209EE952003A61AE /* CallAndMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3E7209EE952003A61AE /* CallAndMessageViewController.xib */; };
+		3D78D3EB209F0222003A61AE /* lauchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3EA209F0222003A61AE /* lauchScreen.png */; };
 		4AF9E87E1D74F5D7C41D9745 /* libPods-PhoneNumber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB2ACA24015FC4B37715C1 /* libPods-PhoneNumber.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		3D78D3E5209EE952003A61AE /* CallAndMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallAndMessageViewController.h; sourceTree = "<group>"; };
 		3D78D3E6209EE952003A61AE /* CallAndMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallAndMessageViewController.m; sourceTree = "<group>"; };
 		3D78D3E7209EE952003A61AE /* CallAndMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallAndMessageViewController.xib; sourceTree = "<group>"; };
+		3D78D3EA209F0222003A61AE /* lauchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lauchScreen.png; sourceTree = "<group>"; };
 		4F349E69D5EF294E8B01C7EC /* libPods-LookupPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LookupPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EF3FD7D9EA8D8419FBB585 /* Pods-PhoneNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneNumber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneNumber/Pods-PhoneNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		D2ACE0989744D75F4FA01995 /* Pods-LookupPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookupPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-LookupPhone/Pods-LookupPhone.release.xcconfig"; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 				3D78D3D4209EB3EF003A61AE /* ic_arrow_left.png */,
 				3D78D3D5209EB3EF003A61AE /* textfield.png */,
 				3D78D3D6209EB3EF003A61AE /* ic_call.png */,
+				3D78D3EA209F0222003A61AE /* lauchScreen.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				3D78D3DA209EB3F0003A61AE /* background.png in Resources */,
 				3D78D3DC209EB3F0003A61AE /* textfield.png in Resources */,
 				3D78D3C6209EB1A5003A61AE /* SearchViewController.xib in Resources */,
+				3D78D3EB209F0222003A61AE /* lauchScreen.png in Resources */,
 				3D78D3D9209EB3F0003A61AE /* ic_phone.png in Resources */,
 				3D78D3CA209EB1A5003A61AE /* HistoryViewController.xib in Resources */,
 				3D78D3AE209EB1A5003A61AE /* iRate.bundle in Resources */,
