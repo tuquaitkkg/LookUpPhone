@@ -19,6 +19,6 @@
 
 #define APPLE_APP_ID @"1222012014"
 
-#define appThemColor                AF_COLOR_HEX(@"00a241")
+#define appThemColor                AF_COLOR_HEX(@"8a6ecb")
 
 #endif  

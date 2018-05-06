@@ -29,13 +29,13 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    [self.window setTintColor:appThemColor];
+    [self.window setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTranslucent:NO];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setBarTintColor:appThemColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
-                                                           NSForegroundColorAttributeName: appThemColor,
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor],
                                                            }];
-    [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
+    [[UITabBar appearance] setBarTintColor:appThemColor];
     
     [GADMobileAds configureWithApplicationID:GOOGLE_ADMOD_APP_ID];
     [self initIrate];
