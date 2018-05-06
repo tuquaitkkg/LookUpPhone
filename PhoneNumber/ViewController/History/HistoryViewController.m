@@ -28,7 +28,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"History";
-        self.tabBarItem.image = [UIImage imageNamed:@"ic_history"];
+        self.tabBarItem.image = [[UIImage imageNamed:@"ic_history_white"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+        self.tabBarItem.selectedImage = [[UIImage imageNamed:@"ic_history_white"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
     }
     
     return self;

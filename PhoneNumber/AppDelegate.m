@@ -37,6 +37,14 @@
                                                            }];
     [[UITabBar appearance] setBarTintColor:appThemColor];
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [UITabBarItem.appearance setTitleTextAttributes:
+     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
+                                           forState:UIControlStateNormal];
+    
+    // then if StateSelected should be different, you should add this code
+    [UITabBarItem.appearance setTitleTextAttributes:
+     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
+                                           forState:UIControlStateSelected];
     
     [GADMobileAds configureWithApplicationID:GOOGLE_ADMOD_APP_ID];
     [self initIrate];

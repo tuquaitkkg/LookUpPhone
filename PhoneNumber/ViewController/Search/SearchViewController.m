@@ -28,7 +28,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Search";
-        self.tabBarItem.image = [UIImage imageNamed:@"ico_search"];
+        self.tabBarItem.image = [[UIImage imageNamed:@"ic_searchtabbar_white"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+        self.tabBarItem.selectedImage = [[UIImage imageNamed:@"ic_searchtabbar_white"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
     }
     
     return self;

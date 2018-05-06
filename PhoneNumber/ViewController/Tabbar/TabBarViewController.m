@@ -32,7 +32,7 @@
         
 //        UINavigationController *settingNV = [[UINavigationController alloc] initWithRootViewController:[[AboutViewController alloc] initWithNibName:NSStringFromClass([AboutViewController class]) bundle:nil]];
 
-        self.viewControllers = @[searchNV,historyNV,contactNV];
+        self.viewControllers = @[searchNV,contactNV,historyNV];
         
     }
     return self;

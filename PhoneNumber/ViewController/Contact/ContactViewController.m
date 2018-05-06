@@ -24,7 +24,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Contact";
-        self.tabBarItem.image = [UIImage imageNamed:@"ic_contact"];
+        self.tabBarItem.image = [[UIImage imageNamed:@"ic_contact_white"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+        self.tabBarItem.selectedImage = [[UIImage imageNamed:@"ic_contact_white"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
     }
     
     return self;
