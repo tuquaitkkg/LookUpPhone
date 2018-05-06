@@ -53,6 +53,11 @@
     [self.navigationController.navigationBar setHidden:YES];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar setHidden:NO];
+}
+
 -(IBAction)searchActionButton_TouchUpInside:(id) sender{
     if (self.numbers.count < 10) {
         [KSToastView ks_showToast:@"Phone number you enter is invalid."];

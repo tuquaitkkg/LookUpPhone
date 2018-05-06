@@ -19,6 +19,12 @@
     [super setSelected:selected animated:animated];
 }
 
+- (IBAction)clickToPhone:(id)sender {
+    if (self.clickGoToCallView) {
+        self.clickGoToCallView(_indexPath);
+    }
+}
+
 -(void)configCell:(CKContact*)contact{
 
     NSString *str = @"";

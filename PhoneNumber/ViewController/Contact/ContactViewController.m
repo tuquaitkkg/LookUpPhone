@@ -119,7 +119,23 @@
     
     ContactViewCell *cell = (ContactViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ContactViewCell class]) ];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.indexPath = indexPath;
     [cell configCell:self.contacts[indexPath.row]];
+    cell.clickGoToCallView = ^(NSIndexPath *indexPath) {
+        CallAndMessageViewController *callVC = [[CallAndMessageViewController alloc] initWithNibName:@"CallAndMessageViewController" bundle:nil];
+        callVC.hidesBottomBarWhenPushed = YES;
+        CKContact *contact = self.contacts[indexPath.row];
+        NSString *str;
+        if (contact.phones.count > 0) {
+            CKPhone *phone = contact.phones[0];
+            str = [phone.number stringByReplacingOccurrencesOfString:@"-" withString:@""];
+            str = [str stringByReplacingOccurrencesOfString:@"(" withString:@""];
+            str = [str stringByReplacingOccurrencesOfString:@")" withString:@""];
+            str = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
+        }
+        callVC.phoneNumber = str;
+        [self.navigationController pushViewController:callVC animated:YES];
+    };
     return cell;
 }
 

@@ -29,13 +29,14 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    [self.window setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setBarTintColor:appThemColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
                                                            }];
     [[UITabBar appearance] setBarTintColor:appThemColor];
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     
     [GADMobileAds configureWithApplicationID:GOOGLE_ADMOD_APP_ID];
     [self initIrate];

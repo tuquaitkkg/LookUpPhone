@@ -48,6 +48,8 @@
 		3D78D3DC209EB3F0003A61AE /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D5209EB3EF003A61AE /* textfield.png */; };
 		3D78D3DD209EB3F0003A61AE /* ic_call.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D6209EB3EF003A61AE /* ic_call.png */; };
 		3D78D3E3209ED1DC003A61AE /* BorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D3E2209ED1DC003A61AE /* BorderView.m */; };
+		3D78D3E8209EE952003A61AE /* CallAndMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D3E6209EE952003A61AE /* CallAndMessageViewController.m */; };
+		3D78D3E9209EE952003A61AE /* CallAndMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3E7209EE952003A61AE /* CallAndMessageViewController.xib */; };
 		4AF9E87E1D74F5D7C41D9745 /* libPods-PhoneNumber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB2ACA24015FC4B37715C1 /* libPods-PhoneNumber.a */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +118,9 @@
 		3D78D3D6209EB3EF003A61AE /* ic_call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_call.png; sourceTree = "<group>"; };
 		3D78D3E1209ED1DC003A61AE /* BorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderView.h; sourceTree = "<group>"; };
 		3D78D3E2209ED1DC003A61AE /* BorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderView.m; sourceTree = "<group>"; };
+		3D78D3E5209EE952003A61AE /* CallAndMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallAndMessageViewController.h; sourceTree = "<group>"; };
+		3D78D3E6209EE952003A61AE /* CallAndMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallAndMessageViewController.m; sourceTree = "<group>"; };
+		3D78D3E7209EE952003A61AE /* CallAndMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallAndMessageViewController.xib; sourceTree = "<group>"; };
 		4F349E69D5EF294E8B01C7EC /* libPods-LookupPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LookupPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EF3FD7D9EA8D8419FBB585 /* Pods-PhoneNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneNumber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneNumber/Pods-PhoneNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		D2ACE0989744D75F4FA01995 /* Pods-LookupPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookupPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-LookupPhone/Pods-LookupPhone.release.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +272,7 @@
 		3D78D38A209EB1A5003A61AE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3D78D3E4209EE933003A61AE /* CallAndMessage */,
 				3D78D38B209EB1A5003A61AE /* Contact */,
 				3D78D38F209EB1A5003A61AE /* Tabbar */,
 				3D78D392209EB1A5003A61AE /* More */,
@@ -382,6 +388,16 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		3D78D3E4209EE933003A61AE /* CallAndMessage */ = {
+			isa = PBXGroup;
+			children = (
+				3D78D3E5209EE952003A61AE /* CallAndMessageViewController.h */,
+				3D78D3E6209EE952003A61AE /* CallAndMessageViewController.m */,
+				3D78D3E7209EE952003A61AE /* CallAndMessageViewController.xib */,
+			);
+			path = CallAndMessage;
+			sourceTree = "<group>";
+		};
 		85E2F5EF91D52FD3E42A621B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,8 +451,8 @@
 				TargetAttributes = {
 					19F958541E2DFB1F00C3BEBC = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 59Y9D6RE4K;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = WP9WTWYQXK;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -485,6 +501,7 @@
 				3D78D3DD209EB3F0003A61AE /* ic_call.png in Resources */,
 				3D78D3C2209EB1A5003A61AE /* AboutViewController.xib in Resources */,
 				3D78D3B7209EB1A5003A61AE /* ContactViewCell.xib in Resources */,
+				3D78D3E9209EE952003A61AE /* CallAndMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D78D3E8209EE952003A61AE /* CallAndMessageViewController.m in Sources */,
 				3D78D3BA209EB1A5003A61AE /* ContactViewCell.m in Sources */,
 				3D78D3CD209EB1A5003A61AE /* BaseViewController.m in Sources */,
 				3D78D3B1209EB1A5003A61AE /* NSDictionary+SafeGetters.mm in Sources */,
@@ -667,19 +685,20 @@
 			baseConfigurationReference = B6EF3FD7D9EA8D8419FBB585 /* Pods-PhoneNumber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Vu Thi Loan (2PG6535XMC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vu Thi Loan (2PG6535XMC)";
-				DEVELOPMENT_TEAM = 59Y9D6RE4K;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP9WTWYQXK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LookupPhone/Vendors/iOS-SDK-Pod-master",
 				);
 				INFOPLIST_FILE = PhoneNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vuloan.reservephonelookup;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtsolution.FakeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1c48d983-baee-4269-883a-c609fc75fc99";
-				PROVISIONING_PROFILE_SPECIFIER = "Reverse Phone Lookup";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -689,18 +708,20 @@
 			baseConfigurationReference = FDE8AC9DF279207A177A61F3 /* Pods-PhoneNumber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vu Thi Loan (59Y9D6RE4K)";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WP9WTWYQXK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LookupPhone/Vendors/iOS-SDK-Pod-master",
 				);
 				INFOPLIST_FILE = PhoneNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vuloan.reservephonelookup;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtsolution.FakeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1c48d983-baee-4269-883a-c609fc75fc99";
-				PROVISIONING_PROFILE_SPECIFIER = "Reverse Phone Lookup";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

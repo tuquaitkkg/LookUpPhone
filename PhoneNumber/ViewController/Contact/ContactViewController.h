@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "CallAndMessageViewController.h"
 
 @interface ContactViewController : BaseViewController
 
