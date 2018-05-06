@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "AboutViewController.h"
 
 @interface HistoryViewController : BaseViewController
 

@@ -30,9 +30,9 @@
         
         UINavigationController *contactNV = [[UINavigationController alloc] initWithRootViewController:[[ContactViewController alloc] initWithNibName:NSStringFromClass([ContactViewController class]) bundle:nil]];
         
-        UINavigationController *settingNV = [[UINavigationController alloc] initWithRootViewController:[[AboutViewController alloc] initWithNibName:NSStringFromClass([AboutViewController class]) bundle:nil]];
+//        UINavigationController *settingNV = [[UINavigationController alloc] initWithRootViewController:[[AboutViewController alloc] initWithNibName:NSStringFromClass([AboutViewController class]) bundle:nil]];
 
-        self.viewControllers = @[searchNV,historyNV,contactNV,settingNV];
+        self.viewControllers = @[searchNV,historyNV,contactNV];
         
     }
     return self;

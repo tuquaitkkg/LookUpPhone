@@ -46,6 +46,13 @@
     
     self.navigationItem.rightBarButtonItem = barButtonItem;
     
+    UIBarButtonItem *barButtonItem1=[[UIBarButtonItem alloc]initWithTitle:@"About"
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(goToRateApp)];
+    
+    self.navigationItem.leftBarButtonItem = barButtonItem1;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,6 +75,12 @@
         [self.navigationItem.rightBarButtonItem setTitle:@"Done"];
     else
         [self.navigationItem.rightBarButtonItem setTitle:@"Edit"];
+}
+
+-(void)goToRateApp{
+    AboutViewController *aboutView = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+    aboutView.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:aboutView animated:YES];
 }
 
 #pragma mark - UITableViewDelegate

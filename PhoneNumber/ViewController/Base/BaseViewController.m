@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor colorWithRed:138.0/255.0 green:110.0/255.0 blue:203.0/255.0 alpha:1.0];
     
     NSString *check = [[NSUserDefaults standardUserDefaults] stringForKey:@"InAppPurchase"];
     if (check.integerValue != 1) {
