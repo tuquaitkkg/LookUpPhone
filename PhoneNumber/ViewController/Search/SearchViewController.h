@@ -9,5 +9,8 @@
 #import "BaseViewController.h"
 
 @interface SearchViewController : BaseViewController
+@property (weak, nonatomic) IBOutlet UIView *viewPhoneNumber;
+@property (weak, nonatomic) IBOutlet UIButton *btnDelete;
+@property (weak, nonatomic) IBOutlet UIButton *btnSearch;
 
 @end

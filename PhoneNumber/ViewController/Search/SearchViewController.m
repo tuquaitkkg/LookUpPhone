@@ -41,12 +41,19 @@
     self.navigationItem.rightBarButtonItem = searchItem;
     self.numberLabel.text = @"";
     self.btnPaste.layer.cornerRadius = 3;
-    self.btnPaste.layer.borderWidth = 1;
+    self.btnPaste.layer.borderWidth = 2;
     self.btnPaste.layer.borderColor = self.btnPaste.titleLabel.textColor.CGColor;
-    
+    self.viewPhoneNumber.layer.cornerRadius = 5.0f;
+    self.viewPhoneNumber.layer.masksToBounds = YES;
+    self.viewPhoneNumber.clipsToBounds = YES;
 }
 
--(void)searchActionButton_TouchUpInside:(UIBarButtonItem*) sender{
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:YES];
+}
+
+-(IBAction)searchActionButton_TouchUpInside:(id) sender{
     if (self.numbers.count < 10) {
         [KSToastView ks_showToast:@"Phone number you enter is invalid."];
         return;

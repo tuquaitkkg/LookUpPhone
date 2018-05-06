@@ -70,7 +70,7 @@
 }
 
 -(void)searchWithPhone:(NSString*)phone{
-    [self logEventToShowFullAd];
+//    [self logEventToShowFullAd];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [API searchPhone:phone
              calBack:^(BOOL success, NSString *message, NSInteger code, id result) {
