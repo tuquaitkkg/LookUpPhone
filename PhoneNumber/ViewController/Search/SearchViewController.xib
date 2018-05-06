@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,23 +24,23 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkp-tC-aZz">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="HM7-A5-gbf">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type a phone number." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-xa-8mp">
-                            <rect key="frame" x="20" y="183" width="335.5" height="24"/>
+                            <rect key="frame" x="20" y="183" width="728.5" height="24"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-W8-VQs">
-                            <rect key="frame" x="67.5" y="217" width="240" height="46"/>
+                            <rect key="frame" x="264" y="217" width="240" height="46"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkv-a9-4Zk">
                                     <rect key="frame" x="0.0" y="0.0" width="42" height="46"/>
@@ -74,7 +74,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxV-WT-Hg9">
-                            <rect key="frame" x="137.5" y="273" width="100" height="37"/>
+                            <rect key="frame" x="334" y="273" width="100" height="37"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="k3J-mk-esX"/>
@@ -89,7 +89,7 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_call.png" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-lk-7xq">
-                            <rect key="frame" x="127.5" y="19" width="120" height="120"/>
+                            <rect key="frame" x="324" y="19" width="120" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="yOA-lk-7xq" secondAttribute="height" multiplier="1:1" id="5zu-kz-TXx"/>
                                 <constraint firstAttribute="width" constant="120" id="z9O-5C-zrl"/>
@@ -115,20 +115,23 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAN-YG-fJA">
-                    <rect key="frame" x="0.0" y="320" width="375" height="347"/>
+                    <rect key="frame" x="0.0" y="320" width="768" height="704"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWB-ev-0zK">
-                            <rect key="frame" x="0.0" y="10" width="375" height="81"/>
+                            <rect key="frame" x="0.0" y="10" width="768" height="170.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEr-0W-6eV" customClass="BorderView">
-                                    <rect key="frame" x="47.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="110" y="5" width="159.5" height="160.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijG-aQ-WG9">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="160.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="1">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="TOU-Zu-eS7"/>
                                             </connections>
@@ -143,14 +146,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0D-uc-ckG" customClass="BorderView">
-                                    <rect key="frame" x="153" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="304" y="5" width="160" height="160.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHx-3H-ioD">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="160.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="2">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="1uM-hy-LVe"/>
                                             </connections>
@@ -166,14 +172,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9te-Xn-IdA" customClass="BorderView">
-                                    <rect key="frame" x="259" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="499" y="5" width="159.5" height="160.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBk-1D-gpg">
-                                            <rect key="frame" x="0.0" y="0.0" width="70.5" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="159" height="160.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="3">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="5yv-H6-H9q"/>
                                             </connections>
@@ -204,17 +213,20 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRj-bR-kf6">
-                            <rect key="frame" x="0.0" y="92" width="375" height="81"/>
+                            <rect key="frame" x="0.0" y="181.5" width="768" height="170"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceN-ng-gCN" customClass="BorderView">
-                                    <rect key="frame" x="46.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="108.5" y="5" width="160.5" height="160"/>
                                     <subviews>
                                         <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed5-bJ-Mxb">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160.5" height="160"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="4">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="MoV-ek-Bgo"/>
                                             </connections>
@@ -229,14 +241,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2B-X3-LYX" customClass="BorderView">
-                                    <rect key="frame" x="152.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="304" y="5" width="161" height="160"/>
                                     <subviews>
                                         <button opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3X-h1-iXo">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="161" height="160"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="5">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="LiI-Vy-TUG"/>
                                             </connections>
@@ -252,14 +267,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHd-Af-Szs" customClass="BorderView">
-                                    <rect key="frame" x="258.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="500" y="5" width="160.5" height="160"/>
                                     <subviews>
                                         <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9B-Ye-Ghb">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160.5" height="160"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="6">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="FWg-Xc-pny"/>
                                             </connections>
@@ -290,17 +308,20 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-1r-gRP">
-                            <rect key="frame" x="0.0" y="174" width="375" height="81"/>
+                            <rect key="frame" x="0.0" y="352.5" width="768" height="170.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2a-sA-Hls" customClass="BorderView">
-                                    <rect key="frame" x="46.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="110" y="5" width="159.5" height="160.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpv-x0-RV5">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="160.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="7">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="JWI-mu-6oi"/>
                                             </connections>
@@ -315,14 +336,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-Bu-eVh" customClass="BorderView">
-                                    <rect key="frame" x="152.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="304.5" y="5" width="160" height="160.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1008" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0n-UM-xz7">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="160.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="8">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="mvn-LX-UwY"/>
                                             </connections>
@@ -338,14 +362,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdh-Za-3QV" customClass="BorderView">
-                                    <rect key="frame" x="258.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="499.5" y="5" width="159.5" height="160.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR2-kb-dvH">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="160.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="9">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="hgA-xG-Qcs"/>
                                             </connections>
@@ -376,16 +403,16 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7z-XR-x8C">
-                            <rect key="frame" x="0.0" y="256" width="375" height="81"/>
+                            <rect key="frame" x="0.0" y="524" width="768" height="170"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n95-DV-PZf" customClass="BorderView">
-                                    <rect key="frame" x="46.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="108.5" y="5" width="160.5" height="160"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="lin-NM-DTj">
-                                            <rect key="frame" x="17" y="18" width="35.5" height="35.5"/>
+                                            <rect key="frame" x="39.5" y="39" width="80.5" height="81"/>
                                         </imageView>
                                         <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8w-Fm-X03">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160.5" height="160"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                             <inset key="imageEdgeInsets" minX="15" minY="20" maxX="15" maxY="20"/>
@@ -410,14 +437,17 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-Xy-vOf" customClass="BorderView">
-                                    <rect key="frame" x="152.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="304" y="5" width="161" height="160"/>
                                     <subviews>
                                         <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iF-gZ-hmu">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="161" height="160"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="0">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="80"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="onNumberButton:" destination="-1" eventType="touchUpInside" id="WOc-Dt-fsn"/>
                                             </connections>
@@ -433,14 +463,14 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thi-0Q-seX" customClass="BorderView">
-                                    <rect key="frame" x="258.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="500" y="5" width="160.5" height="160"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musica-searcher.png" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-ug-mZJ">
-                                            <rect key="frame" x="17" y="18" width="35.5" height="35.5"/>
+                                            <rect key="frame" x="39.5" y="39" width="80.5" height="81"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1P-GZ-biz">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160.5" height="160"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                             <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
