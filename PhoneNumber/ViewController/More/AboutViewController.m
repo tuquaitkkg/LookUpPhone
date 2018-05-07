@@ -39,6 +39,8 @@
     self.labelVersion.text = [self appNameAndVersionNumberDisplayString];
     [self.btnReview setBackgroundColor:appThemColor];
     [self.btnShareApp setBackgroundColor:appThemColor];
+    [self.btnPrivacy setBackgroundColor:appThemColor];
+    [self.btnSupport setBackgroundColor:appThemColor];
     self.btnReview.layer.cornerRadius = 3;
     self.btnShareApp.layer.cornerRadius = 3;
 }
@@ -66,6 +68,34 @@
 
 - (IBAction)onReview:(id)sender {
     [[iRate sharedInstance] promptForRating];
+}
+
+- (IBAction)clickPrivacy:(id)sender {
+    PrivacyViewController *privacyVC = [[PrivacyViewController alloc] initWithNibName:@"PrivacyViewController" bundle:nil];
+    [self.navigationController pushViewController:privacyVC animated:YES];
+}
+
+- (IBAction)clickSupport:(id)sender {
+    if([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
+        mailCont.navigationBar.tintColor = [UIColor whiteColor];
+        mailCont.mailComposeDelegate = self;
+        [mailCont setToRecipients:@[@"hivonghuongdicuatoi90@gmail.com"]];
+        [self presentViewController:mailCont animated:YES completion:nil];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Your device cannot send email. Check your email settings."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+    //handle any error
+    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

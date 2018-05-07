@@ -11,8 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
             <connections>
+                <outlet property="btnPrivacy" destination="Yal-sY-S5V" id="KDg-jr-LPB"/>
                 <outlet property="btnReview" destination="SGu-Hi-wn5" id="WDA-pZ-OKO"/>
                 <outlet property="btnShareApp" destination="749-ai-2E3" id="Xic-bP-l3m"/>
+                <outlet property="btnSupport" destination="dSY-dE-v8n" id="803-Z3-pQq"/>
                 <outlet property="labelVersion" destination="6jG-Yl-wC0" id="QAb-NR-dVl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -49,8 +51,6 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="300" id="5hd-WV-mJF"/>
                         <constraint firstAttribute="height" constant="40" id="Hzm-bQ-bLF"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="bwA-er-rJx"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="cbk-tp-IJp"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                     <state key="normal" title="Write a review">
@@ -60,14 +60,48 @@
                         <action selector="onReview:" destination="-1" eventType="touchUpInside" id="saM-w9-TpZ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yal-sY-S5V">
+                    <rect key="frame" x="38" y="177" width="300" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="7ph-2H-cpZ"/>
+                        <constraint firstAttribute="height" constant="40" id="S3T-I7-GGZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Privacy">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickPrivacy:" destination="-1" eventType="touchUpInside" id="aYY-qW-exD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSY-dE-v8n">
+                    <rect key="frame" x="38" y="237" width="300" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6wQ-YP-fci"/>
+                        <constraint firstAttribute="width" constant="300" id="yNw-KM-iTo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Support">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickSupport:" destination="-1" eventType="touchUpInside" id="iW1-vw-J46"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="6jG-Yl-wC0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="8vH-g0-bm5"/>
+                <constraint firstItem="dSY-dE-v8n" firstAttribute="top" secondItem="Yal-sY-S5V" secondAttribute="bottom" constant="20" id="9UM-De-YH8"/>
                 <constraint firstItem="SGu-Hi-wn5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F8O-iY-2S0"/>
+                <constraint firstItem="Yal-sY-S5V" firstAttribute="centerX" secondItem="SGu-Hi-wn5" secondAttribute="centerX" id="IjO-Zp-wvf"/>
                 <constraint firstItem="749-ai-2E3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NBT-i1-JnZ"/>
                 <constraint firstAttribute="trailing" secondItem="6jG-Yl-wC0" secondAttribute="trailing" id="QJJ-dq-Ej1"/>
                 <constraint firstItem="6jG-Yl-wC0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="S1V-g8-0Tp"/>
+                <constraint firstItem="dSY-dE-v8n" firstAttribute="centerX" secondItem="Yal-sY-S5V" secondAttribute="centerX" id="Sk5-5o-T2D"/>
+                <constraint firstItem="Yal-sY-S5V" firstAttribute="top" secondItem="SGu-Hi-wn5" secondAttribute="bottom" constant="20" id="btv-8x-2Mo"/>
                 <constraint firstItem="749-ai-2E3" firstAttribute="top" secondItem="6jG-Yl-wC0" secondAttribute="bottom" constant="20" id="gYH-vQ-Bcl"/>
                 <constraint firstItem="SGu-Hi-wn5" firstAttribute="top" secondItem="749-ai-2E3" secondAttribute="bottom" constant="20" id="v03-XL-uGn"/>
             </constraints>

@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "AppConfig.h"
+#import "PrivacyViewController.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface AboutViewController : UIViewController
+@interface AboutViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *btnPrivacy;
+@property (weak, nonatomic) IBOutlet UIButton *btnSupport;
+- (IBAction)clickPrivacy:(id)sender;
+- (IBAction)clickSupport:(id)sender;
 
 @end

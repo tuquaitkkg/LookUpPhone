@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D46053620A0992A00BDAD55 /* policy_file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D46053520A0992A00BDAD55 /* policy_file.txt */; };
+		3D46053B20A0996500BDAD55 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46053920A0996500BDAD55 /* PrivacyViewController.m */; };
+		3D46053C20A0996500BDAD55 /* PrivacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D46053A20A0996500BDAD55 /* PrivacyViewController.xib */; };
 		3D78D3AE209EB1A5003A61AE /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D368209EB1A5003A61AE /* iRate.bundle */; };
 		3D78D3AF209EB1A5003A61AE /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D369209EB1A5003A61AE /* iRate.m */; };
 		3D78D3B0209EB1A5003A61AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D36B209EB1A5003A61AE /* Info.plist */; };
@@ -57,6 +60,10 @@
 /* Begin PBXFileReference section */
 		19F958551E2DFB2000C3BEBC /* PhoneNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AB2ACA24015FC4B37715C1 /* libPods-PhoneNumber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhoneNumber.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D46053520A0992A00BDAD55 /* policy_file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = policy_file.txt; sourceTree = "<group>"; };
+		3D46053820A0996500BDAD55 /* PrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
+		3D46053920A0996500BDAD55 /* PrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
+		3D46053A20A0996500BDAD55 /* PrivacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyViewController.xib; sourceTree = "<group>"; };
 		3D78D368209EB1A5003A61AE /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iRate.bundle; sourceTree = "<group>"; };
 		3D78D369209EB1A5003A61AE /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		3D78D36A209EB1A5003A61AE /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
@@ -160,6 +167,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3D46053720A0993B00BDAD55 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				3D46053820A0996500BDAD55 /* PrivacyViewController.h */,
+				3D46053920A0996500BDAD55 /* PrivacyViewController.m */,
+				3D46053A20A0996500BDAD55 /* PrivacyViewController.xib */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
 		3D78D364209EB1A5003A61AE /* PhoneNumber */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +193,7 @@
 				3D78D388209EB1A5003A61AE /* Resource */,
 				3D78D38A209EB1A5003A61AE /* ViewController */,
 				3D78D3AD209EB1A5003A61AE /* Info.plist */,
+				3D46053520A0992A00BDAD55 /* policy_file.txt */,
 			);
 			path = PhoneNumber;
 			sourceTree = "<group>";
@@ -274,6 +292,7 @@
 		3D78D38A209EB1A5003A61AE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3D46053720A0993B00BDAD55 /* Privacy */,
 				3D78D3E4209EE933003A61AE /* CallAndMessage */,
 				3D78D38B209EB1A5003A61AE /* Contact */,
 				3D78D38F209EB1A5003A61AE /* Tabbar */,
@@ -485,6 +504,7 @@
 				3D78D3B2209EB1A5003A61AE /* LaunchScreen.storyboard in Resources */,
 				3D78D3DB209EB3F0003A61AE /* ic_arrow_left.png in Resources */,
 				3D78D3D7209EB3F0003A61AE /* ic_message.png in Resources */,
+				3D46053C20A0996500BDAD55 /* PrivacyViewController.xib in Resources */,
 				3D78D3B9209EB1A5003A61AE /* PhoneViewCell.xib in Resources */,
 				3D78D3B5209EB1A5003A61AE /* HistoryViewCell.xib in Resources */,
 				3D78D3B0209EB1A5003A61AE /* Info.plist in Resources */,
@@ -496,6 +516,7 @@
 				3D78D3C8209EB1A5003A61AE /* MapViewController.xib in Resources */,
 				3D78D3DA209EB3F0003A61AE /* background.png in Resources */,
 				3D78D3DC209EB3F0003A61AE /* textfield.png in Resources */,
+				3D46053620A0992A00BDAD55 /* policy_file.txt in Resources */,
 				3D78D3C6209EB1A5003A61AE /* SearchViewController.xib in Resources */,
 				3D78D3EB209F0222003A61AE /* lauchScreen.png in Resources */,
 				3D78D3D9209EB3F0003A61AE /* ic_phone.png in Resources */,
@@ -569,6 +590,7 @@
 				3D78D3B3209EB1A5003A61AE /* main.m in Sources */,
 				3D78D3BE209EB1A5003A61AE /* ContactViewController.m in Sources */,
 				3D78D3C5209EB1A5003A61AE /* SearchViewController.m in Sources */,
+				3D46053B20A0996500BDAD55 /* PrivacyViewController.m in Sources */,
 				3D78D3C1209EB1A5003A61AE /* AboutViewController.m in Sources */,
 				3D78D3BB209EB1A5003A61AE /* AppDelegate.m in Sources */,
 				3D78D3C0209EB1A5003A61AE /* TabBarViewController.m in Sources */,
