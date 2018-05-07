@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,23 +24,23 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkp-tC-aZz">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="455.5"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="HM7-A5-gbf">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="455.5"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type a phone number." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-xa-8mp">
-                            <rect key="frame" x="20" y="183" width="333.5" height="24"/>
+                            <rect key="frame" x="20" y="318.5" width="982.5" height="24"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-W8-VQs">
-                            <rect key="frame" x="67.5" y="217" width="240" height="46"/>
+                            <rect key="frame" x="392" y="352.5" width="240" height="46"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkv-a9-4Zk">
                                     <rect key="frame" x="0.0" y="0.0" width="42" height="46"/>
@@ -74,7 +74,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxV-WT-Hg9">
-                            <rect key="frame" x="137.5" y="273" width="100" height="37"/>
+                            <rect key="frame" x="462" y="408.5" width="100" height="37"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="k3J-mk-esX"/>
@@ -89,7 +89,7 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_call.png" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-lk-7xq">
-                            <rect key="frame" x="127.5" y="25" width="120" height="120"/>
+                            <rect key="frame" x="452" y="25" width="120" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="yOA-lk-7xq" secondAttribute="height" multiplier="1:1" id="5zu-kz-TXx"/>
                                 <constraint firstAttribute="width" constant="120" id="z9O-5C-zrl"/>
@@ -102,7 +102,6 @@
                         <constraint firstAttribute="height" constant="320" id="5ZI-ui-3vS"/>
                         <constraint firstItem="HM7-A5-gbf" firstAttribute="top" secondItem="Nkp-tC-aZz" secondAttribute="top" id="7pl-X8-pQ9"/>
                         <constraint firstItem="HM7-A5-gbf" firstAttribute="leading" secondItem="Nkp-tC-aZz" secondAttribute="leading" id="7w3-dM-8xH"/>
-                        <constraint firstAttribute="height" constant="400" id="Bnt-pc-L6i"/>
                         <constraint firstItem="ohf-W8-VQs" firstAttribute="top" secondItem="rN9-xa-8mp" secondAttribute="bottom" constant="10" id="Fc9-38-XoE"/>
                         <constraint firstAttribute="trailing" secondItem="HM7-A5-gbf" secondAttribute="trailing" id="LKw-Jk-erl"/>
                         <constraint firstAttribute="bottom" secondItem="HM7-A5-gbf" secondAttribute="bottom" id="OAG-yS-KLO"/>
@@ -114,29 +113,23 @@
                         <constraint firstItem="wxV-WT-Hg9" firstAttribute="top" secondItem="ohf-W8-VQs" secondAttribute="bottom" constant="10" id="i4C-LN-0e5"/>
                         <constraint firstItem="rN9-xa-8mp" firstAttribute="centerX" secondItem="yOA-lk-7xq" secondAttribute="centerX" id="sjI-Yx-uKu"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="Bnt-pc-L6i"/>
-                        </mask>
-                    </variation>
                     <variation key="heightClass=regular-widthClass=regular">
                         <mask key="constraints">
                             <exclude reference="5ZI-ui-3vS"/>
-                            <include reference="Bnt-pc-L6i"/>
                         </mask>
                     </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAN-YG-fJA">
-                    <rect key="frame" x="0.0" y="320" width="375" height="347"/>
+                    <rect key="frame" x="0.0" y="455.5" width="1024" height="910.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWB-ev-0zK">
-                            <rect key="frame" x="0.0" y="10" width="375" height="81.5"/>
+                            <rect key="frame" x="0.0" y="10" width="1024" height="221.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEr-0W-6eV" customClass="BorderView">
-                                    <rect key="frame" x="46.5" y="5.5" width="71" height="71.5"/>
+                                    <rect key="frame" x="247.5" y="45" width="130" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijG-aQ-WG9">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="1">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,10 +151,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0D-uc-ckG" customClass="BorderView">
-                                    <rect key="frame" x="152.5" y="5.5" width="71.5" height="71.5"/>
+                                    <rect key="frame" x="447.5" y="45" width="129.5" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHx-3H-ioD">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="71.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129.5" height="130"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="2">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -176,18 +169,29 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
+                                        <constraint firstAttribute="height" constant="130" id="2Qy-kO-Roz"/>
                                         <constraint firstAttribute="width" secondItem="q0D-uc-ckG" secondAttribute="height" multiplier="1:1" id="3Ff-oW-6xU"/>
                                         <constraint firstItem="qHx-3H-ioD" firstAttribute="width" secondItem="q0D-uc-ckG" secondAttribute="width" id="FDc-Gj-wJb"/>
                                         <constraint firstItem="qHx-3H-ioD" firstAttribute="centerX" secondItem="q0D-uc-ckG" secondAttribute="centerX" id="V8T-oW-7jV"/>
                                         <constraint firstItem="qHx-3H-ioD" firstAttribute="centerY" secondItem="q0D-uc-ckG" secondAttribute="centerY" id="jvI-QV-o9m"/>
                                         <constraint firstItem="qHx-3H-ioD" firstAttribute="height" secondItem="q0D-uc-ckG" secondAttribute="height" id="rds-w9-u0l"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="2Qy-kO-Roz"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <mask key="constraints">
+                                            <include reference="2Qy-kO-Roz"/>
+                                        </mask>
+                                    </variation>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9te-Xn-IdA" customClass="BorderView">
-                                    <rect key="frame" x="259" y="5.5" width="71.5" height="71.5"/>
+                                    <rect key="frame" x="647" y="45" width="129" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBk-1D-gpg">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="71.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="130"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="3">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -222,16 +226,12 @@
                                 <constraint firstItem="q0D-uc-ckG" firstAttribute="centerY" secondItem="dWB-ev-0zK" secondAttribute="centerY" id="gtU-oR-Y28"/>
                                 <constraint firstItem="q0D-uc-ckG" firstAttribute="height" secondItem="9te-Xn-IdA" secondAttribute="height" id="oxb-rb-vSF"/>
                                 <constraint firstItem="q0D-uc-ckG" firstAttribute="centerY" secondItem="9te-Xn-IdA" secondAttribute="centerY" id="t3z-Ca-lev"/>
-                                <constraint firstItem="q0D-uc-ckG" firstAttribute="height" secondItem="dWB-ev-0zK" secondAttribute="height" id="uJ5-Wu-B1x">
-                                    <variation key="heightClass=regular-widthClass=regular" constant="-20"/>
-                                </constraint>
                                 <constraint firstItem="9te-Xn-IdA" firstAttribute="leading" secondItem="q0D-uc-ckG" secondAttribute="trailing" constant="35" id="xgL-pz-yMC"/>
                                 <constraint firstItem="q0D-uc-ckG" firstAttribute="height" secondItem="lEr-0W-6eV" secondAttribute="height" id="zM4-pO-v6f"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
                                     <exclude reference="NkA-ta-Ezb"/>
-                                    <exclude reference="uJ5-Wu-B1x"/>
                                     <exclude reference="DGJ-Xx-S9v"/>
                                 </mask>
                             </variation>
@@ -240,20 +240,19 @@
                                     <include reference="NkA-ta-Ezb"/>
                                     <exclude reference="aTV-OU-ORu"/>
                                     <exclude reference="frU-lN-8lU"/>
-                                    <include reference="uJ5-Wu-B1x"/>
                                     <include reference="DGJ-Xx-S9v"/>
                                     <exclude reference="xgL-pz-yMC"/>
                                 </mask>
                             </variation>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRj-bR-kf6">
-                            <rect key="frame" x="0.0" y="92.5" width="375" height="80.5"/>
+                            <rect key="frame" x="0.0" y="232.5" width="1024" height="222"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceN-ng-gCN" customClass="BorderView">
-                                    <rect key="frame" x="46.5" y="5" width="71" height="71"/>
+                                    <rect key="frame" x="247.5" y="46" width="130" height="129.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed5-bJ-Mxb">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="129.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="4">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -275,10 +274,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2B-X3-LYX" customClass="BorderView">
-                                    <rect key="frame" x="152.5" y="5" width="71.5" height="71"/>
+                                    <rect key="frame" x="447.5" y="46" width="129.5" height="129.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3X-h1-iXo">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129.5" height="129.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="5">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -300,10 +299,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHd-Af-Szs" customClass="BorderView">
-                                    <rect key="frame" x="259" y="5" width="71.5" height="71"/>
+                                    <rect key="frame" x="647" y="46" width="129" height="129.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9B-Ye-Ghb">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="129.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="6">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -338,13 +337,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-1r-gRP">
-                            <rect key="frame" x="0.0" y="174" width="375" height="81"/>
+                            <rect key="frame" x="0.0" y="455.5" width="1024" height="222"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2a-sA-Hls" customClass="BorderView">
-                                    <rect key="frame" x="46.5" y="5" width="71" height="72"/>
+                                    <rect key="frame" x="247.5" y="46.5" width="130" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpv-x0-RV5">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="7">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -366,10 +365,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-Bu-eVh" customClass="BorderView">
-                                    <rect key="frame" x="152.5" y="5" width="71.5" height="72"/>
+                                    <rect key="frame" x="447.5" y="46.5" width="129.5" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1008" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0n-UM-xz7">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129.5" height="130"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="8">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -391,10 +390,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdh-Za-3QV" customClass="BorderView">
-                                    <rect key="frame" x="259" y="5" width="71.5" height="72"/>
+                                    <rect key="frame" x="647" y="46.5" width="129" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR2-kb-dvH">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="130"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="9">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -429,16 +428,16 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7z-XR-x8C">
-                            <rect key="frame" x="0.0" y="256" width="375" height="81"/>
+                            <rect key="frame" x="0.0" y="678.5" width="1024" height="222"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n95-DV-PZf" customClass="BorderView">
-                                    <rect key="frame" x="46.5" y="5.5" width="71" height="71"/>
+                                    <rect key="frame" x="247.5" y="45.5" width="130" height="129.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="lin-NM-DTj">
-                                            <rect key="frame" x="17" y="17.5" width="36" height="36"/>
+                                            <rect key="frame" x="31.5" y="31.5" width="65.5" height="65"/>
                                         </imageView>
                                         <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8w-Fm-X03">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="129.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                             <inset key="imageEdgeInsets" minX="15" minY="20" maxX="15" maxY="20"/>
@@ -463,10 +462,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-Xy-vOf" customClass="BorderView">
-                                    <rect key="frame" x="152.5" y="5.5" width="71.5" height="71"/>
+                                    <rect key="frame" x="447.5" y="45.5" width="129.5" height="129.5"/>
                                     <subviews>
                                         <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iF-gZ-hmu">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129.5" height="129.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                             <state key="normal" title="0">
                                                 <color key="titleColor" red="0.54117647059999996" green="0.43137254899999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -488,14 +487,14 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thi-0Q-seX" customClass="BorderView">
-                                    <rect key="frame" x="259" y="5.5" width="71.5" height="71"/>
+                                    <rect key="frame" x="647" y="45.5" width="129" height="129.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musica-searcher.png" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-ug-mZJ">
-                                            <rect key="frame" x="17.5" y="17.5" width="35.5" height="36"/>
+                                            <rect key="frame" x="32" y="31.5" width="64.5" height="65"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1P-GZ-biz">
-                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="129.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                             <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
@@ -574,8 +573,19 @@
                 <constraint firstItem="EAN-YG-fJA" firstAttribute="top" secondItem="Nkp-tC-aZz" secondAttribute="bottom" id="dn2-KC-6dc"/>
                 <constraint firstAttribute="trailing" secondItem="Nkp-tC-aZz" secondAttribute="trailing" id="gsE-kn-IdZ"/>
                 <constraint firstItem="Nkp-tC-aZz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hpu-NB-KNR"/>
+                <constraint firstItem="Nkp-tC-aZz" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:3" id="htu-V8-lf9"/>
                 <constraint firstAttribute="bottom" secondItem="EAN-YG-fJA" secondAttribute="bottom" id="oX7-uL-NWK"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="htu-V8-lf9"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="htu-V8-lf9"/>
+                </mask>
+            </variation>
         </view>
     </objects>
     <resources>
