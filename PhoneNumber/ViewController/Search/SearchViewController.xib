@@ -14,7 +14,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
             <connections>
                 <outlet property="btnDelete" destination="f8w-Fm-X03" id="SfM-Qt-8Mi"/>
-                <outlet property="btnPaste" destination="wxV-WT-Hg9" id="7DT-cz-0kn"/>
                 <outlet property="btnSearch" destination="D1P-GZ-biz" id="Whe-JB-FIA"/>
                 <outlet property="codeLabel" destination="zkv-a9-4Zk" id="kXw-GJ-HOp"/>
                 <outlet property="numberLabel" destination="QC8-gu-z43" id="1NV-nF-Olp"/>
@@ -33,14 +32,14 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="HM7-A5-gbf">
                             <rect key="frame" x="0.0" y="0.0" width="768" height="341.5"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type a phone number." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-xa-8mp">
-                            <rect key="frame" x="20" y="204.5" width="726.5" height="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter phone number and check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-xa-8mp">
+                            <rect key="frame" x="20" y="231.5" width="726.5" height="24"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-W8-VQs">
-                            <rect key="frame" x="264" y="238.5" width="240" height="46"/>
+                            <rect key="frame" x="264" y="265.5" width="240" height="46"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkv-a9-4Zk">
                                     <rect key="frame" x="0.0" y="0.0" width="42" height="46"/>
@@ -73,26 +72,11 @@
                                 <constraint firstItem="QC8-gu-z43" firstAttribute="top" secondItem="ohf-W8-VQs" secondAttribute="top" id="pxo-2A-bNt"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxV-WT-Hg9">
-                            <rect key="frame" x="334" y="294.5" width="100" height="37"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="100" id="k3J-mk-esX"/>
-                                <constraint firstAttribute="height" constant="37" id="upj-gl-jfM"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                            <state key="normal" title="Paste">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <connections>
-                                <action selector="onPaste:" destination="-1" eventType="touchUpInside" id="z29-PR-ldd"/>
-                            </connections>
-                        </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_call.png" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-lk-7xq">
-                            <rect key="frame" x="324" y="25" width="120" height="120"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-lk-7xq">
+                            <rect key="frame" x="299" y="25" width="170" height="170"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="yOA-lk-7xq" secondAttribute="height" multiplier="1:1" id="5zu-kz-TXx"/>
-                                <constraint firstAttribute="width" constant="120" id="z9O-5C-zrl"/>
+                                <constraint firstAttribute="width" constant="170" id="z9O-5C-zrl"/>
                             </constraints>
                         </imageView>
                     </subviews>
@@ -106,11 +90,9 @@
                         <constraint firstAttribute="trailing" secondItem="HM7-A5-gbf" secondAttribute="trailing" id="LKw-Jk-erl"/>
                         <constraint firstAttribute="bottom" secondItem="HM7-A5-gbf" secondAttribute="bottom" id="OAG-yS-KLO"/>
                         <constraint firstItem="ohf-W8-VQs" firstAttribute="centerX" secondItem="Nkp-tC-aZz" secondAttribute="centerX" id="OgX-lg-grb"/>
-                        <constraint firstAttribute="bottom" secondItem="wxV-WT-Hg9" secondAttribute="bottom" constant="10" id="StC-EP-aP4"/>
-                        <constraint firstItem="wxV-WT-Hg9" firstAttribute="centerX" secondItem="Nkp-tC-aZz" secondAttribute="centerX" id="U31-Zl-iK3"/>
                         <constraint firstItem="yOA-lk-7xq" firstAttribute="centerX" secondItem="Nkp-tC-aZz" secondAttribute="centerX" id="bEd-IV-Dao"/>
                         <constraint firstItem="rN9-xa-8mp" firstAttribute="leading" secondItem="Nkp-tC-aZz" secondAttribute="leading" constant="20" id="hhD-ed-YZR"/>
-                        <constraint firstItem="wxV-WT-Hg9" firstAttribute="top" secondItem="ohf-W8-VQs" secondAttribute="bottom" constant="10" id="i4C-LN-0e5"/>
+                        <constraint firstAttribute="bottom" secondItem="ohf-W8-VQs" secondAttribute="bottom" constant="30" id="scJ-wY-jzv"/>
                         <constraint firstItem="rN9-xa-8mp" firstAttribute="centerX" secondItem="yOA-lk-7xq" secondAttribute="centerX" id="sjI-Yx-uKu"/>
                     </constraints>
                     <variation key="heightClass=regular-widthClass=regular">
@@ -126,7 +108,7 @@
                             <rect key="frame" x="0.0" y="10" width="768" height="165"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEr-0W-6eV" customClass="BorderView">
-                                    <rect key="frame" x="119" y="16.5" width="130.5" height="130"/>
+                                    <rect key="frame" x="119" y="17.5" width="130.5" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijG-aQ-WG9">
                                             <rect key="frame" x="0.0" y="0.0" width="130.5" height="130"/>
@@ -151,7 +133,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0D-uc-ckG" customClass="BorderView">
-                                    <rect key="frame" x="319.5" y="16.5" width="130" height="130"/>
+                                    <rect key="frame" x="319.5" y="17.5" width="130" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHx-3H-ioD">
                                             <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
@@ -188,7 +170,7 @@
                                     </variation>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9te-Xn-IdA" customClass="BorderView">
-                                    <rect key="frame" x="519.5" y="16.5" width="130" height="130"/>
+                                    <rect key="frame" x="519.5" y="17.5" width="130" height="130"/>
                                     <subviews>
                                         <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBk-1D-gpg">
                                             <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
@@ -591,7 +573,7 @@
     <resources>
         <image name="background.png" width="1242" height="1017"/>
         <image name="ic_arrow_left.png" width="102" height="76"/>
-        <image name="ic_call.png" width="347" height="343"/>
+        <image name="icon_phone.png" width="485" height="485"/>
         <image name="musica-searcher.png" width="128" height="128"/>
     </resources>
 </document>

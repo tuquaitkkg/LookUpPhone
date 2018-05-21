@@ -14,5 +14,10 @@
 - (IBAction)actionCall:(id)sender;
 @property (strong, nonatomic) NSString *phoneNumber;
 - (IBAction)actionMessage:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UIView *viewParent1;
+@property (weak, nonatomic) IBOutlet UIView *viewCall;
+@property (weak, nonatomic) IBOutlet UIView *viewParent2;
+@property (weak, nonatomic) IBOutlet UIView *viewMessage;
 
 @end

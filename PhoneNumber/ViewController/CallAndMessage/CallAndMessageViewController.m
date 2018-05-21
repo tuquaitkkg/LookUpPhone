@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.view layoutIfNeeded];
+    [self setBoderView:_lblTitle withCornerRadius:_lblTitle.frame.size.height/2];
+    [self setBoderView:_viewParent1 withCornerRadius:20.0f];
+    [self setBoderView:_viewParent2 withCornerRadius:20.0f];
+    [self setBoderView:_viewCall withCornerRadius:10.0f];
+    [self setBoderView:_viewMessage withCornerRadius:10.0f];
+    [self setBoderView:_viewCall withBorderWidth:5];
+    [self setBoderView:_viewMessage withBorderWidth:5];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +71,17 @@
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
+}
+
+- (void)setBoderView:(UIView *)view withCornerRadius:(CGFloat)radius {
+    view.layer.masksToBounds = YES;
+    view.layer.cornerRadius = radius;
+}
+
+- (void)setBoderView:(UIView *)view withBorderWidth:(CGFloat)width {
+    view.layer.masksToBounds = YES;
+    view.layer.borderWidth = width;
+    view.layer.borderColor = [UIColor colorWithRed:217.0/255.0 green:188.0/255.0 blue:240.0/255.0 alpha:1].CGColor;
 }
 
 @end

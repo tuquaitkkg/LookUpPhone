@@ -43,9 +43,7 @@
 		3D78D3CC209EB1A5003A61AE /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D3A9209EB1A5003A61AE /* SettingViewController.m */; };
 		3D78D3CD209EB1A5003A61AE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D3AB209EB1A5003A61AE /* BaseViewController.m */; };
 		3D78D3CE209EB1A5003A61AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3AD209EB1A5003A61AE /* Info.plist */; };
-		3D78D3D7209EB3F0003A61AE /* ic_message.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D0209EB3EF003A61AE /* ic_message.png */; };
 		3D78D3D8209EB3F0003A61AE /* musica-searcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D1209EB3EF003A61AE /* musica-searcher.png */; };
-		3D78D3D9209EB3F0003A61AE /* ic_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D2209EB3EF003A61AE /* ic_phone.png */; };
 		3D78D3DA209EB3F0003A61AE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D3209EB3EF003A61AE /* background.png */; };
 		3D78D3DB209EB3F0003A61AE /* ic_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D4209EB3EF003A61AE /* ic_arrow_left.png */; };
 		3D78D3DC209EB3F0003A61AE /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3D5209EB3EF003A61AE /* textfield.png */; };
@@ -55,6 +53,10 @@
 		3D78D3E9209EE952003A61AE /* CallAndMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3E7209EE952003A61AE /* CallAndMessageViewController.xib */; };
 		3D78D3EB209F0222003A61AE /* lauchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D78D3EA209F0222003A61AE /* lauchScreen.png */; };
 		4AF9E87E1D74F5D7C41D9745 /* libPods-PhoneNumber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB2ACA24015FC4B37715C1 /* libPods-PhoneNumber.a */; };
+		9092146620B273740032D269 /* icon_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9092146220B273740032D269 /* icon_phone.png */; };
+		9092146720B273740032D269 /* ic_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 9092146320B273740032D269 /* ic_mail.png */; };
+		9092146820B273740032D269 /* icon_phone2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9092146420B273740032D269 /* icon_phone2.png */; };
+		9092146920B273740032D269 /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9092146520B273740032D269 /* background_1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,9 +119,7 @@
 		3D78D3AB209EB1A5003A61AE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3D78D3AC209EB1A5003A61AE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3D78D3AD209EB1A5003A61AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D78D3D0209EB3EF003A61AE /* ic_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_message.png; sourceTree = "<group>"; };
 		3D78D3D1209EB3EF003A61AE /* musica-searcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "musica-searcher.png"; sourceTree = "<group>"; };
-		3D78D3D2209EB3EF003A61AE /* ic_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_phone.png; sourceTree = "<group>"; };
 		3D78D3D3209EB3EF003A61AE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		3D78D3D4209EB3EF003A61AE /* ic_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_arrow_left.png; sourceTree = "<group>"; };
 		3D78D3D5209EB3EF003A61AE /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
@@ -131,6 +131,10 @@
 		3D78D3E7209EE952003A61AE /* CallAndMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallAndMessageViewController.xib; sourceTree = "<group>"; };
 		3D78D3EA209F0222003A61AE /* lauchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lauchScreen.png; sourceTree = "<group>"; };
 		4F349E69D5EF294E8B01C7EC /* libPods-LookupPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LookupPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9092146220B273740032D269 /* icon_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_phone.png; sourceTree = "<group>"; };
+		9092146320B273740032D269 /* ic_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_mail.png; sourceTree = "<group>"; };
+		9092146420B273740032D269 /* icon_phone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_phone2.png; sourceTree = "<group>"; };
+		9092146520B273740032D269 /* background_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_1.png; sourceTree = "<group>"; };
 		B6EF3FD7D9EA8D8419FBB585 /* Pods-PhoneNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneNumber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneNumber/Pods-PhoneNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		D2ACE0989744D75F4FA01995 /* Pods-LookupPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookupPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-LookupPhone/Pods-LookupPhone.release.xcconfig"; sourceTree = "<group>"; };
 		F7DC8DA19227CD098A210063 /* Pods-LookupPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookupPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LookupPhone/Pods-LookupPhone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -398,9 +402,11 @@
 		3D78D3CF209EB3EF003A61AE /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				3D78D3D0209EB3EF003A61AE /* ic_message.png */,
+				9092146520B273740032D269 /* background_1.png */,
+				9092146320B273740032D269 /* ic_mail.png */,
+				9092146220B273740032D269 /* icon_phone.png */,
+				9092146420B273740032D269 /* icon_phone2.png */,
 				3D78D3D1209EB3EF003A61AE /* musica-searcher.png */,
-				3D78D3D2209EB3EF003A61AE /* ic_phone.png */,
 				3D78D3D3209EB3EF003A61AE /* background.png */,
 				3D78D3D4209EB3EF003A61AE /* ic_arrow_left.png */,
 				3D78D3D5209EB3EF003A61AE /* textfield.png */,
@@ -503,7 +509,7 @@
 			files = (
 				3D78D3B2209EB1A5003A61AE /* LaunchScreen.storyboard in Resources */,
 				3D78D3DB209EB3F0003A61AE /* ic_arrow_left.png in Resources */,
-				3D78D3D7209EB3F0003A61AE /* ic_message.png in Resources */,
+				9092146620B273740032D269 /* icon_phone.png in Resources */,
 				3D46053C20A0996500BDAD55 /* PrivacyViewController.xib in Resources */,
 				3D78D3B9209EB1A5003A61AE /* PhoneViewCell.xib in Resources */,
 				3D78D3B5209EB1A5003A61AE /* HistoryViewCell.xib in Resources */,
@@ -512,14 +518,16 @@
 				3D78D3BD209EB1A5003A61AE /* Assets.xcassets in Resources */,
 				3D78D3BF209EB1A5003A61AE /* ContactViewController.xib in Resources */,
 				3D78D3CB209EB1A5003A61AE /* SettingViewController.xib in Resources */,
+				9092146720B273740032D269 /* ic_mail.png in Resources */,
+				9092146920B273740032D269 /* background_1.png in Resources */,
 				3D78D3CE209EB1A5003A61AE /* Info.plist in Resources */,
 				3D78D3C8209EB1A5003A61AE /* MapViewController.xib in Resources */,
 				3D78D3DA209EB3F0003A61AE /* background.png in Resources */,
 				3D78D3DC209EB3F0003A61AE /* textfield.png in Resources */,
 				3D46053620A0992A00BDAD55 /* policy_file.txt in Resources */,
+				9092146820B273740032D269 /* icon_phone2.png in Resources */,
 				3D78D3C6209EB1A5003A61AE /* SearchViewController.xib in Resources */,
 				3D78D3EB209F0222003A61AE /* lauchScreen.png in Resources */,
-				3D78D3D9209EB3F0003A61AE /* ic_phone.png in Resources */,
 				3D78D3CA209EB1A5003A61AE /* HistoryViewController.xib in Resources */,
 				3D78D3AE209EB1A5003A61AE /* iRate.bundle in Resources */,
 				3D78D3D8209EB3F0003A61AE /* musica-searcher.png in Resources */,
